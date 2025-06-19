@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="login-container">
+    <form class="login-form" onsubmit="event.preventDefault(); login();">
+      <h1 class="login-title">Welcome Back</h1>
+
+      <label for="phone" class="login-label">Phone Number</label>
+      <input type="tel" id="phone" class="login-input" placeholder="Enter your phone number" required />
+
+      <label for="password" class="login-label">Password</label>
+      <input type="password" id="password" class="login-input" placeholder="Enter your password" required />
+
+      <button type="submit" class="login-button">Login</button>
+      <p id="message" class="login-message"></p>
+    </form>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
